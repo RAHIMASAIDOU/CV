@@ -3,59 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>CV Moderne</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200 flex items-center justify-center min-h-screen p-4">
-    <div class="bg-white shadow-lg rounded-lg max-w-6xl w-full  flex overflow-hidden">
-        <!-- Colonne gauche - Formulaire -->
-        <div class="w-2/5 bg-gray-100 text-white p-10 flex flex-col">
-            <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Remplissez votre CV</h2>
-            <form id="cvForm" class="space-y-4">
-                <h3 class="text-xl text-gray-700 font-semibold">Informations personnelles</h3>
-                <input type="text" id="name" placeholder="Nom Complet" class="w-full p-2 rounded-lg  border-2 text-white">
-                <input type="number" id="age" placeholder="Âge" class="w-full p-2 rounded  text-white">
-                <input type="text" id="gender" placeholder="Sexe" class="w-full p-2 rounded  text-white">
-                <input type="text" id="designation" placeholder="Titre du poste" class="w-full p-2 rounded  text-white">
-                <input type="text" id="status" placeholder="Situation actuelle" class="w-full p-2 rounded  text-white">
-                <textarea id="description" placeholder="Description" class="w-full p-3 rounded  text-white"></textarea>
-                <input type="email" id="email" placeholder="Email" class="w-full p-2 rounded-sm text-white">
-                <input type="text" id="phone" placeholder="Téléphone" class="w-full p-2 rounded  text-white">
-                <input type="text" id="address" placeholder="Adresse" class="w-full p-2 rounded  text-white">
-                <input type="file" id="profile" class="w-full p-2 rounded  text-white">
-                
-                
-                <h3 class="text-xl font-semibold">Expériences professionnelles</h3>
-                <input type="text" id="nom" placeholder="Nom de l'entreprise" class="w-full p-2 rounded bg-gray-800 text-white">
-                <input type="text" id="poste" placeholder="poste occupé" class="w-full p-2 rounded bg-gray-800 text-white">
-                <input type="number" id="duree" placeholder="durée" class="w-full p-2 rounded bg-gray-800 text-white">
-                <textarea id="descriptionM" placeholder="description des missions" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
 
-                <h3 class="text-xl font-semibold">Formation</h3>
-                <input type="text" id="diplome" placeholder="Diplômes obtenus" class="w-full p-2 rounded bg-gray-800 text-white">
-                <input type="text" id="ecole" placeholder="établissement" class="w-full p-2 rounded bg-gray-800 text-white">
-                <input type="date" id="année" placeholder="année d’obtention" class="w-full p-2 rounded bg-gray-800 text-white">
+    <div class="bg-white shadow-lg rounded-lg max-w-6xl w-full flex overflow-hidden">
+        
+        <!-- Colonne gauche - Formulaire -->
+        <div class="w-2/5 bg-gray-200 p-8">
+            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Remplissez votre CV</h2>
+            <form id="cvForm" class="space-y-4">
+
+                <h3 class="text-lg font-semibold text-gray-700">Informations personnelles</h3>
+                <input type="text" id="name" placeholder="Nom Complet" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="number" id="age" placeholder="Âge" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="gender" placeholder="Sexe" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="designation" placeholder="Titre du poste" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="status" placeholder="Situation actuelle" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <textarea id="description" placeholder="Description" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="phone" placeholder="Téléphone" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="address" placeholder="Adresse" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="file" id="profile" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 
-                <h3 class="text-xl font-semibold">Compétences</h3>
-                <textarea id="competence" placeholder="Liste des compétences clés avec niveau de maîtrise" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+                <h3 class="text-lg font-semibold text-gray-700">Expériences professionnelles</h3>
+                <input type="text" id="nomEntreprise" placeholder="Nom de l'entreprise" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="posteOccupe" placeholder="Poste occupé" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="number" id="duree" placeholder="Durée (en années/mois)" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <textarea id="descriptionMissions" placeholder="Description des missions" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+
+                <h3 class="text-lg font-semibold text-gray-700">Formation</h3>
+                <input type="text" id="diplome" placeholder="Diplômes obtenus" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="text" id="ecole" placeholder="Établissement" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <input type="date" id="anneeObtention" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                 
-                <h3 class="text-xl font-semibold">Centres d'intérêt</h3>
-                <textarea id="interet" placeholder="Liste des loisirs et passions" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+                <h3 class="text-lg font-semibold text-gray-700">Compétences</h3>
+                <textarea id="competences" placeholder="Liste des compétences clés" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
                 
-                <h3 class="text-xl font-semibold">Références professionnelles</h3>
-                <input type="text" id="nom" placeholder="Nom" class="w-full p-2 rounded bg-gray-800 text-white">
-                <input type="text" id="poste" placeholder="poste" class="w-full p-2 rounded bg-gray-800 text-white">
-                <input type="number" id="contact" placeholder="contact des références professionnelles" class="w-full p-2 rounded bg-gray-800 text-white">
+                <h3 class="text-lg font-semibold text-gray-700">Centres d'intérêt</h3>
+                <textarea id="interets" placeholder="Liste des loisirs et passions" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
                 
-                <h3 class="text-xl font-semibold">Langues</h3>
-                <textarea id="langue" placeholder="Langues maîtrisées et niveau de compétence" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
-                <input type="text" id="langue" placeholder="poste" class="w-full p-2 rounded bg-gray-800 text-white">
-                <button type="button" onclick="saveFormulaire()" class="w-full p-3 bg-blue-500 text-white rounded hover:bg-green-700">Sauvegarder</button>
+                <h3 class="text-lg font-semibold text-gray-700">Langues</h3>
+                <textarea id="langues" placeholder="Langues maîtrisées et niveau" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                
+                <button type="button" class="w-full p-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                    Sauvegarder
+                </button>
                 
             </form>
         </div>
-        
-        <!-- Colonne droite CV -->
+
+        <!-- Colonne droite - CV -->
         <div class="w-3/5 bg-white" id="cvP">
             <div class="bg-blue-900 text-white p-6 flex items-center space-x-4">
                 <img id="pProfil" class="w-24 h-24 rounded-full border-2 border-white" src="" alt="Photo de profil">
@@ -91,6 +90,8 @@
                 <p class="text-md text-gray-700" id="pLangue">...</p>
             </div>
         </div>
+
     </div>
+
 </body>
 </html>
