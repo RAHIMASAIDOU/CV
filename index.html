@@ -6,12 +6,12 @@
     <title>CV Moderne</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center overflow-y-auto w-full">
+<body class="bg-gray-100 font-serif w-full">
 
-    <div class="bg-white shadow-lg rounded-lg p-4 space-x-4 w-full flex h-screen overflow-hidden">
+    <div class="bg-white shadow-lg rounded-lg p-4 space-x-2 w-full h-screen flex items-center justify-center overflow-hidden md:flex-rows">
         
         <!-- Colonne gauche - Formulaire -->
-        <div class="w-2/5 bg-[#F5E6Cb] text-black p-10 flex flex-col h-screen overflow-y-auto  ">
+        <div class="w-2/5 bg-[#F5E6Cb] text-black p-10 flex flex-col md: flex-row h-screen overflow-y-auto  ">
             <h2 class="text-3xl font-bold text-center mb-6 ">Remplissez votre CV</h2>
             <form id="cvForm" class="space-y-4">
                 <h3 class="text-xl font-semibold">Informations personnelles</h3>
@@ -66,7 +66,7 @@
                 <textarea id="langue" placeholder="Langues maîtrisées et niveau de compétence" class="w-full p-3 rounded bg-gray-100 text-blackgit "></textarea>
                 <input type="text" id="langue" placeholder="poste" class="w-full p-2 rounded bg-gray-100 text-white">
                 <button type="button" onclick="saveFormulaire()" class="w-full p-3 bg-[#7B2C2C] text-white rounded hover:bg-[#9B2226]">Sauvegarder</button>
-                
+                <button type="button" onclick="saveFormulaire()" class="w-full p-3 border-[#9B2226] border-2 text-[#9B2226] rounded hover:bg-gray-100">Telecharger</button>
             </form>
         </div>
                     
@@ -88,9 +88,7 @@
                     <p id="pEmail">Email: </p>
                     <p id="pAdresse">Adresse: </p>
                 </div>
-                            
-
-                            
+                                  
                 <div class="mt-6 w-full">
                     <h3 class="text-lg font-semibold border-b border-white pb-1">Langues</h3>
                     <p id="pLangue">...</p>
@@ -103,7 +101,7 @@
             </div>
                         
             <!-- cv Colonne droite -->
-            <div class="fex flex-row w-full bg-[#F5E6CA]">
+            <div class="fex flex-row w-full bg-[#F5E6CA] ">
                 <!-- partie haut -->
                 <div class="  bg-[#9B2226]  text-white w-full p-10 flex items-center col-start-1 col-end-7">
                     <div class="text-star w-full ">
@@ -142,6 +140,5 @@
         </div>            
             
     </div>
-
 </body>
 </html> 
