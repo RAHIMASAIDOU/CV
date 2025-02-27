@@ -32,6 +32,7 @@
                 <input type="text" id="poste" placeholder="poste occupé" class="w-full p-2 rounded bg-gray-100 text-black">
                 <input type="number" id="duree" placeholder="durée" class="w-full p-2 rounded bg-gray-100 text-black">
                 <textarea id="descriptionM" placeholder="description des missions" class="w-full p-3 rounded bg-gray-100 text-black"></textarea>
+                <button type="buttonAjouter" onclick="ajouFormulaire()" class="w-1/3 ml-20 h-8 bg-[#7B2C2C] text-white rounded hover:bg-[#9B2226]">Ajouter</button>
 
                 <h3 class="text-xl font-semibold">Formation</h3>
                 <input type="text" id="diplome" placeholder="Diplômes obtenus" class="w-full p-2 rounded bg-graytext-black">
@@ -62,12 +63,13 @@
             <div class=" bg-[#7B2C2C] text-white w-2/5 p-4 pt-10  flex flex-col items-center ">
                 <img id="pProfil" class="w-24 h-24 rounded-full border-2 border-white" src="" alt="Photo de profil">
                             
-                <div class="mt-6 w-full pt-8 mt-10">
+                <div class="mt-6 w-full pt-8 mt-10 ">
                     <p class="text-md " id="pAge">Âge: </p>
                     <p class="text-md " id="pSex">Sexe: </p>
                     <p class="text-md " id="pStatut">Situation actuelle: </p>
-                    <h2 class="text-2xl font-bold  mt-6">Description</h2>
-                    <p class="text-md " id="pDescription">...</p>
+                </div>
+
+                <div class="mt-6 w-full">
                     <h3 class="text-lg font-semibold border-b border-white pb-1">Contact</h3>
                     <p id="pPhone">Téléphone: </p>
                     <p id="pEmail">Email: </p>
@@ -99,14 +101,12 @@
     
                 <!-- partie bas -->
                 <div class=" pt-10 p-10  bg-[#F5E6CA]">
-                    <div class="mt-6 w-full ">
-                        <h3 class="text-2xl font-bold text-[#9B2226] mt-6 border-b border-black pb-2 text-[#9B2226]">Compétences</h3>
-                        <p id="previewCompetence">...</p>
-                    </div>
+                    <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Description</h2>
+                    <p class="text-md " id="pDescription">...</p>
                     
                     <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Expériences professionnelles</h2>
                     <p class="text-md text-gray-700" id="pExperience">...</p>
-                    <p class="text-md text-gray-700" id="pPoste">...</p>
+                    <p class="text-md text-gray-700" id="EPoste">...</p>
                     <p class="text-md text-gray-700" id="pDuree">...</p>
                     <p class="text-md text-gray-700" id="pDescriptionM">...</p>
                             
