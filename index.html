@@ -11,87 +11,126 @@
     <div class="bg-white shadow-lg rounded-lg max-w-6xl w-full flex overflow-hidden">
         
         <!-- Colonne gauche - Formulaire -->
-        <div class="w-2/5 bg-gray-200 p-8">
-            <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Remplissez votre CV</h2>
+        <div class="w-2/5 bg-[#F5E6Cb]  text-black p-10 flex flex-col overflow-y-auto md:scroll-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Remplissez votre CV</h2>
             <form id="cvForm" class="space-y-4">
+                <h3 class="text-xl font-semibold">Informations personnelles</h3>
+                <input type="text" id="name" placeholder="Nom Complet" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="number" id="age" placeholder="Âge" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="gender" placeholder="Sexe" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="designation" placeholder="Titre du poste" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="status" placeholder="Situation actuelle" class="w-full p-2 rounded bg-gray-100 text-white">
+                <textarea id="description" placeholder="Description" class="w-full p-3 rounded bg-gray-100 text-white"></textarea>
+                <input type="email" id="email" placeholder="Email" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="phone" placeholder="Téléphone" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="address" placeholder="Adresse" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="file" id="profile" class="w-full p-2 rounded  text-white">
+                
+                
+                <h3 class="text-xl font-semibold">Expériences professionnelles</h3>
+                <input type="text" id="nomE" placeholder="Nom de l'entreprise" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="poste" placeholder="poste occupé" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="number" id="duree" placeholder="durée" class="w-full p-2 rounded bg-gray-100 text-white">
+                <textarea id="descriptionM" placeholder="description des missions" class="w-full p-3 rounded bg-gray-100 text-white"></textarea>
 
-                <h3 class="text-lg font-semibold text-gray-700">Informations personnelles</h3>
-                <input type="text" id="name" placeholder="Nom Complet" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="number" id="age" placeholder="Âge" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="gender" placeholder="Sexe" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="designation" placeholder="Titre du poste" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="status" placeholder="Situation actuelle" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <textarea id="description" placeholder="Description" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
-                <input type="email" id="email" placeholder="Email" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="phone" placeholder="Téléphone" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="address" placeholder="Adresse" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="file" id="profile" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <h3 class="text-xl font-semibold">Formation</h3>
+                <input type="text" id="diplome" placeholder="Diplômes obtenus" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="ecole" placeholder="établissement" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="date" id="annee" placeholder="année d’obtention" class="w-full p-2 rounded bg-gray-100 text-white">
                 
-                <h3 class="text-lg font-semibold text-gray-700">Expériences professionnelles</h3>
-                <input type="text" id="nomEntreprise" placeholder="Nom de l'entreprise" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="posteOccupe" placeholder="Poste occupé" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="number" id="duree" placeholder="Durée (en années/mois)" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <textarea id="descriptionMissions" placeholder="Description des missions" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
-
-                <h3 class="text-lg font-semibold text-gray-700">Formation</h3>
-                <input type="text" id="diplome" placeholder="Diplômes obtenus" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="text" id="ecole" placeholder="Établissement" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                <input type="date" id="anneeObtention" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                <h3 class="text-xl font-semibold">Compétences</h3>
+                <textarea id="competence" placeholder="Liste des compétences clés avec niveau de maîtrise" class="w-full p-3 rounded bg-gray-100 text-white"></textarea>
                 
-                <h3 class="text-lg font-semibold text-gray-700">Compétences</h3>
-                <textarea id="competences" placeholder="Liste des compétences clés" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                <h3 class="text-xl font-semibold">Centres d'intérêt</h3>
+                <textarea id="interet" placeholder="Liste des loisirs et passions" class="w-full p-3 rounded bg-gray-100 text-white"></textarea>
                 
-                <h3 class="text-lg font-semibold text-gray-700">Centres d'intérêt</h3>
-                <textarea id="interets" placeholder="Liste des loisirs et passions" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+                <h3 class="text-xl font-semibold">Références professionnelles</h3>
+                <input type="text" id="nomPro" placeholder="Nom" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="text" id="posteR" placeholder="poste" class="w-full p-2 rounded bg-gray-100 text-white">
+                <input type="number" id="contact" placeholder="contact des références professionnelles" class="w-full p-2 rounded bg-gray-100 text-white">
                 
-                <h3 class="text-lg font-semibold text-gray-700">Langues</h3>
-                <textarea id="langues" placeholder="Langues maîtrisées et niveau" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
-                
-                <button type="button" class="w-full p-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-                    Sauvegarder
-                </button>
+                <h3 class="text-xl font-semibold">Langues</h3>
+                <textarea id="langue" placeholder="Langues maîtrisées et niveau de compétence" class="w-full p-3 rounded bg-gray-100 text-white"></textarea>
+                <input type="text" id="langue" placeholder="poste" class="w-full p-2 rounded bg-gray-100 text-white">
+                <button type="button" onclick="saveFormulaire()" class="w-full p-3 bg-[#7B2C2C] text-white rounded hover:bg-[#9B2226]">Sauvegarder</button>
                 
             </form>
         </div>
-
-        <!-- Colonne droite - CV -->
-        <div class="w-3/5 bg-white" id="cvP">
-            <div class="bg-blue-900 text-white p-6 flex items-center space-x-4">
-                <img id="pProfil" class="w-24 h-24 rounded-full border-2 border-white" src="" alt="Photo de profil">
-                <div>
-                    <h2 class="text-3xl font-bold" id="pName">Nom Complet</h2>
-                    <p class="text-md" id="pPoste">Titre du poste</p>
+                    
+        <!-- CV -->
+        <div class="flex col w-full h-2/4 pb-20 mb-20">
+            <!-- cv Colonne gauche -->
+            <div class=" bg-[#7B2C2C] text-white w-2/5 p-4 pt-10  flex flex-col items-center ">
+                <img id="pProfil" class="w-24 h-24 pt-5 p-2 rounded-full border-2 border-white" src="" alt="Photo de profil">
+                            
+                <div class="mt-6 w-full pt-8 mt-10">
+                    <p class="text-md " id="pAge">Âge: </p>
+                    <p class="text-md " id="pSex">Sexe: </p>
+                    <p class="text-md " id="pStatut">Situation actuelle: </p>
+                    <h2 class="text-2xl font-bold  mt-6">Description</h2>
+                    <p class="text-md " id="pDescription">...</p>
+                    <h3 class="text-lg font-semibold border-b border-white pb-1">Contact</h3>
+                    <p id="pPhone">Téléphone: </p>
+                    <p id="pEmail">Email: </p>
+                    <p id="pAdresse">Adresse: </p>
+                </div>
+                            
+                <div class="mt-6 w-full ">
+                    <h3 class="text-lg font-semibold border-b border-white pb-1">Compétences</h3>
+                    <p id="previewCompetence">...</p>
+                </div>
+                            
+                <div class="mt-6 w-full">
+                    <h3 class="text-lg font-semibold border-b border-white pb-1">Langues</h3>
+                    <p id="pLangue">...</p>
+                </div>
+                            
+                <div class="mt-6 w-full">
+                    <h3 class="text-lg font-semibold border-b border-white pb-1">Loisirs</h3>
+                    <p id="pInterest">...</p>
                 </div>
             </div>
-            <div class="p-8">
-                <p class="text-md text-gray-600" id="pAge">Âge: </p>
-                <p class="text-md text-gray-600" id="pSex">Sexe: </p>
-                <p class="text-md text-gray-600" id="pStatut">Situation actuelle: </p>
-                <h3 class="font-bold mt-6 text-blue-900">Contacts</h3>
-                <p id="pPhone">Téléphone: </p>
-                <p id="pEmail">Email: </p>
-                <p id="pAddresse">Adresse: </p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Description</h2>
-                <p class="text-md text-gray-700" id="pDescription">...</p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Expériences professionnelles</h2>
-                <p class="text-md text-gray-700" id="pExperience">...</p>
-                <p class="text-md text-gray-700" id="pPoste">...</p>
-                <p class="text-md text-gray-700" id="pDuree">...</p>
-                <p class="text-md text-gray-700" id="pDescriptionM">...</p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Formation</h2>
-                <p class="text-md text-gray-700" id="pEducation">...</p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Compétences</h2>
-                <p class="text-md text-gray-700" id="previewCompetence">...</p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Centres d'intérêt</h2>
-                <p class="text-md text-gray-700" id="pInterest">...</p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Références professionnelles</h2>
-                <p class="text-md text-gray-700" id="pReferences">...</p>
-                <h2 class="text-2xl font-bold text-blue-900 mt-6">Langues</h2>
-                <p class="text-md text-gray-700" id="pLangue">...</p>
-            </div>
-        </div>
+                        
+            <!-- cv Colonne droite -->
+            <div class="fex flex-row w-full bg-[#F5E6CA]">
+                <!-- partie haut -->
+                <div class="  bg-[#9B2226]  text-white w-full p-10 flex items-center col-start-1 col-end-7">
+                    <div class="text-star w-full ">
+                        <h2 class="text-3xl font-bold " id="pName">Nom Complet</h2>
+                        <p class="text-md" id="pPoste">Titre du poste</p>
+                    </div>
+                </div>
+    
+                <!-- partie bas -->
+                <div class=" pt-10 p-10  bg-[#F5E6CA]">
+                    <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Expériences professionnelles</h2>
+                    <p class="text-md text-gray-700" id="pExperience">...</p>
+                    <p class="text-md text-gray-700" id="pPoste">...</p>
+                    <p class="text-md text-gray-700" id="pDuree">...</p>
+                    <p class="text-md text-gray-700" id="pDescriptionM">...</p>
+                            
+                    <h2 class="text-2xl font-bold text-[#9B2226] mt-6 ">Formation</h2>
+                    <p class="text-md text-gray-700" id="pEducation">...</p>
 
+                    <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Compétences</h2>
+                    <p class="text-md text-gray-700" id="previewCompetence">...</p>
+
+                    <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Centres d'intérêt</h2>
+                <p class="text-md text-gray-700" id="pInterest">...</p>
+
+                <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Références professionnelles</h2>
+                <p class="text-md text-gray-700" id="pReferences">...</p>
+
+
+
+                </div>
+            </div>
+           
+        </div>
+        
+            
+            
     </div>
 
 </body>
-</html>
+</html> 
