@@ -6,9 +6,9 @@
     <title>CV Moderne</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-serif w-full">
+<body class="bg-gray-100 font-serif overflow-y-auto w-full">
 
-    <div class="bg-white shadow-lg rounded-lg p-4 space-x-2 w-full h-screen flex items-center justify-center overflow-hidden md:flex-rows">
+    <div class="bg-white shadow-lg rounded-lg p-4 space-x-2 w-full overflow-y-auto h-screen flex items-center  justify-center overflow-hidden md:flex-rows">
         
         <!-- Colonne gauche - Formulaire -->
         <div class="w-2/5 bg-[#F5E6Cb] text-black p-10 flex flex-col md: flex-row h-screen overflow-y-auto  ">
@@ -22,12 +22,12 @@
                 <h5 class="font-semibold">Genre</h5>
                 <div class="flex flex-rows space-x-4">
                     <div class=" items-center">
-                        <input id="radio-1" type="radio" value="" name="default-radio" class=" text-blue-600 bg-gray-100  ">
-                        <label for="radio-1" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Feminin</label>
+                        <input id="radio-1" type="radio" value="" name="default-radio" class=" text-blue-600 bg-[#7B2C2C]  ">
+                        <label for="radio-1" class=" text-sm font-medium text-black dark:text-gray-300">Feminin</label>
                     </div>
                     <div class="flex items-center">
-                        <input checked id="radio-2" type="radio" value="" name="default-radio" class=" text-blue-600 bg-gray-100 ">
-                        <label for="radio-2" class=" text-sm font-medium text-gray-900git  dark:text-gray-300">Masculin</label>
+                        <input checked id="radio-2" type="radio" value="" name="default-radio" class="  bg-gray-800 ">
+                        <label for="radio-2" class=" text-sm font-medium text-black  dark:text-gray-300">Masculin</label>
                     </div>
                 </div>
         
@@ -71,7 +71,7 @@
         </div>
                     
         <!-- CV -->
-        <div class="flex col w-full h-screen overflow-y-auto  ">
+        <div class="flex col w-full h-screen  ">
             <!-- cv Colonne gauche -->
             <div class=" bg-[#7B2C2C] text-white w-2/5 p-4  h-screen flex flex-col items-center  ">
                 <img id="pProfil" class="w-24 h-24 rounded-full border-2 border-white" src="" alt="Photo de profil">
@@ -101,7 +101,7 @@
             </div>
                         
             <!-- cv Colonne droite -->
-            <div class="fex flex-row w-full bg-[#F5E6CA] ">
+            <div class="fex flex-row w-full bg-[#F5E6CA] h-screen">
                 <!-- partie haut -->
                 <div class="  bg-[#9B2226]  text-white w-full p-10 flex items-center col-start-1 col-end-7">
                     <div class="text-star w-full ">
@@ -111,7 +111,7 @@
                 </div>
     
                 <!-- partie bas -->
-                <div class=" pt-10 p-10  bg-[#F5E6CA]">
+                <div class=" pt-10 p-10  bg-[#F5E6CA] h-screen">
                     <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Description</h2>
                     <p class="text-md " id="pDescription">...</p>
                     
