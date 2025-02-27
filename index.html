@@ -6,23 +6,36 @@
     <title>CV Moderne</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-6">
+<body class="bg-gray-100 flex items-center justify-center overflow-y-auto w-full">
 
-    <div class="bg-white shadow-lg rounded-lg max-w-6xl w-full flex overflow-hidden">
+    <div class="bg-white shadow-lg rounded-lg p-4 space-x-4 w-full flex h-screen overflow-hidden">
         
         <!-- Colonne gauche - Formulaire -->
-        <div class="w-2/5 bg-[#F5E6Cb]  text-black p-10 flex flex-col overflow-y-auto md:scroll-auto">
-            <h2 class="text-3xl font-bold text-center mb-6">Remplissez votre CV</h2>
+        <div class="w-2/5 bg-[#F5E6Cb] text-black p-10 flex flex-col h-screen overflow-y-auto  ">
+            <h2 class="text-3xl font-bold text-center mb-6 ">Remplissez votre CV</h2>
             <form id="cvForm" class="space-y-4">
                 <h3 class="text-xl font-semibold">Informations personnelles</h3>
                 <input type="text" id="name" placeholder="Nom Complet" class="w-full p-2 rounded bg-gray-100 text-black">
+        
                 <input type="number" id="age" placeholder="Âge" class="w-full p-2 rounded bg-gray-100 text-black">
-                <input type="text" id="gender" placeholder="Sexe" class="w-full p-2 rounded bg-gray-100 text-black">
+
+                <h5 class="font-semibold">Genre</h5>
+                <div class="flex flex-rows space-x-4">
+                    <div class=" items-center">
+                        <input id="radio-1" type="radio" value="" name="default-radio" class=" text-blue-600 bg-gray-100  ">
+                        <label for="radio-1" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Feminin</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input checked id="radio-2" type="radio" value="" name="default-radio" class=" text-blue-600 bg-gray-100 ">
+                        <label for="radio-2" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Masculin</label>
+                    </div>
+                </div>
+        
                 <input type="text" id="designation" placeholder="Titre du poste" class="w-full p-2 rounded bg-gray-100 text-black">
                 <input type="text" id="status" placeholder="Situation actuelle" class="w-full p-2 rounded bg-gray-100 text-black">
                 <textarea id="description" placeholder="Description" class="w-full p-3 rounded bg-gray-100 text-black"></textarea>
                 <input type="email" id="email" placeholder="Email" class="w-full p-2 rounded bg-gray-100 text-black">
-                <input type="text" id="phone" placeholder="Téléphone" class="w-full p-2 rounded bg-gray-100 text-black">
+                <input type="number" id="phone" placeholder="Téléphone" class="w-full p-2 rounded bg-gray-100 text-black">
                 <input type="text" id="address" placeholder="Adresse" class="w-full p-2 rounded bg-gray-100 text-black">
                 <input type="file" id="profile" class="w-full p-2 rounded  text-white">
                 
@@ -58,9 +71,9 @@
         </div>
                     
         <!-- CV -->
-        <div class="flex col w-full h-2/4 pb-20 mb-20">
+        <div class="flex col w-full h-screen overflow-y-auto pb-20 mb-20 ">
             <!-- cv Colonne gauche -->
-            <div class=" bg-[#7B2C2C] text-white w-2/5 p-4 pt-10  flex flex-col items-center ">
+            <div class=" bg-[#7B2C2C] text-white w-2/5 p-4 pt-10 h-screen flex flex-col items-center ">
                 <img id="pProfil" class="w-24 h-24 rounded-full border-2 border-white" src="" alt="Photo de profil">
                             
                 <div class="mt-6 w-full pt-8 mt-10 ">
@@ -117,19 +130,14 @@
                     <p class="text-md text-gray-700" id="previewCompetence">...</p>
 
                     <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Centres d'intérêt</h2>
-                <p class="text-md text-gray-700" id="pInterest">...</p>
+                    <p class="text-md text-gray-700" id="pInterest">...</p>
 
-                <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Références professionnelles</h2>
-                <p class="text-md text-gray-700" id="pReferences">...</p>
-
-
-
+                    <h2 class="text-2xl font-bold text-[#9B2226] mt-6">Références professionnelles</h2>
+                    <p class="text-md text-gray-700" id="pReferences">...</p>
                 </div>
             </div>
-           
-        </div>
-        
             
+        </div>            
             
     </div>
 
